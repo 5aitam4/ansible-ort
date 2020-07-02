@@ -6,9 +6,3 @@
   - name: edit file
     lineinfile: line="algo de texto" path=/home/saitama/ansible-test
     register: lif_info
-  - debug: msg="{{ lif_info }}"
-  - name: run a command
-    become yes
-    file:
-      name: /home/saitama/ansible-test
-      state: absent
